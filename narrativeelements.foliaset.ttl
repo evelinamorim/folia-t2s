@@ -1,0 +1,39 @@
+@prefix fsd: <http://folia.science.ru.nl/setdefinition#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+narrativeelements:Set a skos:Collection ;
+    skos:member narrativeelements:eve,
+        narrativeelements:part,
+        narrativeelements:time,
+        narrativeelements:measure,
+        narrativeelements:spatial;
+    skos:notation "narrativeelements" .
+
+narrativeelements:eve a skos:Concept;
+    skos:notation "eve" ;
+    skos:prefLabel "Event" .
+
+narrativeelements:part a skos:Concept ;
+    skos:notation "part" ;
+    skos:prefLabel "Participant" .
+
+narrativeelements:time a skos:Concept ;
+    skos:notation "time" ;
+    skos:prefLabel "Time" .
+
+narrativeelements:measure a skos:Concept ;
+    skos:notation "measure" ;
+    skos:prefLabel "Measure" .
+
+narrativeelements:spatial a skos:Concept ;
+    skos:notation "spatial" ;
+    skos:prefLabel "Spatial Relation" .
+
+
+
+
+
